@@ -10,21 +10,9 @@ var trimmed;
 server.listen(5000); 
 console.log('App started at port...5000');
 app.use(express.static(__dirname + '/public'));
-app.get('/',function(req,res){
-	res.sendfile(__dirname+'/public/404.html');
-});
 app.get('/:key',function(req,res){
 	trimmed = req.params.key.trim();
-	if (req.url === '/favicon.ico')
-	{
-	    res.writeHead(200, {'Content-Type': 'image/x-icon'} );
-	    res.end();
-	    return;
-  	}
-	else
-	{
-		res.sendfile(__dirname+'/public/public.html');
-	}
+	res.sendfile(__dirname+'/public/public.html');
 	
 });
 io.sockets.on('connection',function(socket){

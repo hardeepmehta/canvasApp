@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "description": "Simple canvas",
   "main": "app.js",
+  "scripts": {
+    "start": "node index.js"
+  },
   "dependencies": {
     "express": "^4.6.1",
     "socket.io": "^1.0.6",

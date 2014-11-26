@@ -1,0 +1,39 @@
+<html>
+<head>
+	<title>Chat with socket.io and node.js</title>
+	<link rel="stylesheet" type="text/css" href="styles/animate.css">
+	<link rel="stylesheet" type="text/css" href="styles/app.min.css">
+	<link rel="stylesheet" type="text/css" href="styles/chat.css">
+	<link rel="stylesheet" type="text/css" href="styles/icomoon/style.css">
+	<script src="socket.io/socket.io.js"></script>
+	<script src="scripts/adapter.js"></script>
+	<script src="scripts/media-api.js"></script>
+	<script src="scripts/media-utils.js"></script>
+	<script src="scripts/jquery.js"></script>
+	<script src="scripts/socketchat.js"></script>
+</head>
+<body>
+	<div id="main-background">
+		<div id="username-prompt">
+			<div id="username-text">
+				Enter Your Username
+			</div>
+			<form id="username">
+				<input type="text" placeholder="Please Enter Your Username">
+				<input type="submit" style="display: none">
+			</form>
+			<div id="errors">
+			</div>
+		</div>
+		<div id="canvasView" style="display: none">
+			<canvas id="imageView" width="800" height="700">
+			</canvas>
+			<div class="panel" id="btn-panel" style="display: none;">
+				<button class="btn btn-default" id="pencil">Pencil</button>
+				<button class="btn btn-default" id="erasor">Erasor</button>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>

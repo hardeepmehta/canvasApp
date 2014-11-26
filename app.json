@@ -1,0 +1,6 @@
+{
+  "name": "Canvas App with SocketIO",
+  "description": "A barebones Node.js app using socketIO and Canvas",
+  "repository": "https://github.com/hardeepmehta/canvasApp",
+  "keywords": ["node", "express", "static"]
+}

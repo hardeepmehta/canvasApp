@@ -4,7 +4,7 @@
   "description": "Simple canvas",
   "main": "app.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node app.js"
   },
   "dependencies": {
     "express": "^4.6.1",
